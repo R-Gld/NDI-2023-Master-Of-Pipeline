@@ -1,0 +1,24 @@
+:root {
+	--bg-main: white;
+	--fg-main: black;
+	--bg-foot: white;
+	--fg-foot: black;
+	--bg-logos: inherit;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--bg-main: #051923;
+		--bg-foot: #222;
+		--fg-main: #ddd;
+		--fg-foot: #ddd;
+		--bg-logos: #ddd;
+	}
+}
+
+#Sprite {
+    position: relative;
+    width: 10%;
+    height: 10%;
+    offset: 100%;
+}

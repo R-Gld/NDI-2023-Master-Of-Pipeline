@@ -1,0 +1,20 @@
+{
+  "name": "mastersofpipelines",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ."
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "description": "Dépôt préconfiguré pour la Nuit de l'Info.",
+  "version": "1.0.0",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.nuit-info.ofni.asso.fr/ndi-2023/mastersofpipelines.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
