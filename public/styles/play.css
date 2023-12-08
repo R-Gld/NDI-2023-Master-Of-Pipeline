@@ -1,24 +1,91 @@
-:root {
-	--bg-main: white;
-	--fg-main: black;
-	--bg-foot: white;
-	--fg-foot: black;
-	--bg-logos: inherit;
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
 
-@media (prefers-color-scheme: dark) {
-	:root {
-		--bg-main: #051923;
-		--bg-foot: #222;
-		--fg-main: #ddd;
-		--fg-foot: #ddd;
-		--bg-logos: #ddd;
-	}
+#BackgroundDiv {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: auto;
+    height: auto;
+    background-color: var(--bg-main);
+    z-index: 0;
+	object-fit: fill;
 }
 
-#Sprite {
-    position: relative;
+#GrassDiv {
+    position: fixed;
+    bottom: 0px;
+    left: 0;
+    width: auto;
+    height: auto;
+    z-index: 3;
+}
+
+#Plant1Div img {
+    position: fixed;
+    bottom: 10%;
+    left: 45%;
     width: 10%;
-    height: 10%;
-    offset: 100%;
+    height: auto;
+    z-index: 1;
+}
+
+#GrassDiv img,
+#BackgroundDiv img{
+    margin: 0;
+    padding: 0;
+    width: auto;
+    height: auto;
+	max-width: 100%;
+    max-height: 100%;
+    object-fit: fill;
+}
+
+#score {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: auto;
+    height: auto;
+    z-index: 2;
+    font-size: 2em;
+    color: var(--text-main);
+    font-family: 'Press Start 2P', cursive;
+}
+
+#HeartDiv img {
+    position: fixed;
+    top : 2%;
+    left: 93%;
+    width: 5%;
+    height: auto;
+    z-index: 5;
+    object-fit: scale-down;
+
+}
+
+
+#HeartDiv2 img {
+    position: fixed;
+    top : 2%;
+    left: 87%;
+    width: 5%;
+    height: auto;
+    z-index: 5;
+    object-fit: scale-down;
+
+}
+
+#HeartDiv3 img {
+    position: fixed;
+    top : 2%;
+    left: 81%;
+    width: 5%;
+    height: auto;
+    z-index: 5;
+    object-fit: scale-down;
+
 }
