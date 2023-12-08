@@ -18,24 +18,14 @@ fail() {
 }
 
 # ---------------------------------------------------------------------------------------------------------------------
-# ---------------------------------------------------------------------------------------------------------------------
-# ---------------------------------------------------------------------------------------------------------------------
-#																							Partie à modifier ci-dessous
-# ---------------------------------------------------------------------------------------------------------------------
-# ---------------------------------------------------------------------------------------------------------------------
-# ---------------------------------------------------------------------------------------------------------------------
-
-# ---------------------------------------------------------------------------------------------------------------------
-# Si votre projet utilise PHP natif, alors il n'y a rien à faire. Ce script n'a rien de spécial à faire
-# echo "J'ai perdu (https://fr.wikipedia.org/wiki/Le_Jeu_(divertissement)"
-
-# ---------------------------------------------------------------------------------------------------------------------
 # Si votre projet utilise nodeJS, décommenter la suite
 export NVM_DIR="/custom-git-hooks/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" || fail "Impossible de charger nvm"
 nvm use default || fail "Impossible de passer à la bonne version de node ($(nvm alias default))"
 
 echo "C'est parti pour \`npm install --production\` !"
+npm install mysql
+npm install body-parser
 npm install --production || fail "npm install raté"
 
 echo "Redémarrage du serveur pm2 \`server-mastersofpipelines\`"
