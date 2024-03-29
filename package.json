@@ -5,7 +5,7 @@
     "start": "node ."
   },
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.19.2"
   },
   "description": "Dépôt préconfiguré pour la Nuit de l'Info.",
   "version": "1.0.0",
